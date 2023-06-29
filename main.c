@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-int *foo1(void);
-int *foo2(void);
+void *foo1(void);
+void *foo2(void);
 
 int main()
 {
-    printf("%d %d\n", *foo1(), *foo2());
+    foo1();
+    foo2();
     return 0;
 }

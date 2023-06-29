@@ -12,5 +12,8 @@ crate-type = ["staticlib"]
 [dependencies]
 
 [profile.release]
-panic = "abort"
 lto = true
+panic = "abort"
+
+[profile.dev]
+panic = "abort"
